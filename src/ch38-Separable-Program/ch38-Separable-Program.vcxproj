@@ -66,6 +66,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <None Include="shader\red.frag.glsl" />
+    <None Include="shader\simple.vert.glsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -66,6 +66,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\main.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shader\tessellation.cont.glsl" />
+    <None Include="shader\tessellation.eval.glsl" />
+    <None Include="shader\tessellation.frag.glsl" />
+    <None Include="shader\tessellation.geom.glsl" />
+    <None Include="shader\tessellation.vert.glsl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -14,4 +14,26 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shader\tessellation.geom.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shader\tessellation.vert.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shader\tessellation.frag.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shader\tessellation.eval.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shader\tessellation.cont.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
 </Project>

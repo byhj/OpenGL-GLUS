@@ -14,4 +14,26 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shader\fur.geom.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shader\fur.vert.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shader\fur.frag.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shader\ambient_diffuse_texture.vert.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shader\ambient_diffuse_texture.frag.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
 </Project>

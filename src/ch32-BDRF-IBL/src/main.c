@@ -142,8 +142,8 @@ GLUSboolean init(GLUSvoid)
 
 	GLfloat colorMaterial[3] = { 0.8, 0.8, 0.8 };
 
-	glusFileLoadText("../Example32/shader/brdf.vert.glsl", &vertexSource);
-	glusFileLoadText("../Example32/shader/brdf.frag.glsl", &fragmentSource);
+	glusFileLoadText("shader/brdf.vert.glsl", &vertexSource);
+	glusFileLoadText("shader/brdf.frag.glsl", &fragmentSource);
 
 	glusProgramBuildFromSource(&g_modelProgram, (const GLchar**)&vertexSource.text, 0, 0, 0, (const GLchar**)&fragmentSource.text);
 
@@ -168,8 +168,8 @@ GLUSboolean init(GLUSvoid)
 
 	//
 
-	glusFileLoadText("../Example32/shader/fullscreen.vert.glsl", &vertexSource);
-	glusFileLoadText("../Example32/shader/fullscreen.frag.glsl", &fragmentSource);
+	glusFileLoadText("shader/fullscreen.vert.glsl", &vertexSource);
+	glusFileLoadText("shader/fullscreen.frag.glsl", &fragmentSource);
 
 	glusProgramBuildFromSource(&g_fullscreenProgram, (const GLchar**)&vertexSource.text, 0, 0, 0, (const GLchar**)&fragmentSource.text);
 
@@ -187,8 +187,8 @@ GLUSboolean init(GLUSvoid)
 	//
 	//
 
-	glusFileLoadText("../Example32/shader/background.vert.glsl", &vertexSource);
-	glusFileLoadText("../Example32/shader/background.frag.glsl", &fragmentSource);
+	glusFileLoadText("shader/background.vert.glsl", &vertexSource);
+	glusFileLoadText("shader/background.frag.glsl", &fragmentSource);
 
 	glusProgramBuildFromSource(&g_backgroundProgram, (const GLUSchar**)&vertexSource.text, 0, 0, 0, (const GLUSchar**)&fragmentSource.text);
 
@@ -251,7 +251,7 @@ GLUSboolean init(GLUSvoid)
 	glBindTexture(GL_TEXTURE_2D, g_panoramaTexture);
 
 	printf("Loading HDR texture ... ");
-	if (!glusImageLoadHdr("doge2.hdr", &image))
+	if (!glusImageLoadHdr("../../media/doge2.hdr", &image))
 	{
 		printf("failed!\n");
 
@@ -299,7 +299,7 @@ GLUSboolean init(GLUSvoid)
 	//
 
 	// Use a helper function to load an wavefront object file.
-	glusShapeLoadWavefront("venusm.obj", &wavefront);
+	glusShapeLoadWavefront("../../media/venusm.obj", &wavefront);
 
 	g_numberVerticesModel = wavefront.numberVertices;
 

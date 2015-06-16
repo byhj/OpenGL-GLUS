@@ -66,6 +66,22 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <None Include="shader\Background.frag.glsl" />
+    <None Include="shader\Background.vert.glsl" />
+    <None Include="shader\Water.frag.glsl" />
+    <None Include="shader\Water.vert.glsl" />
+    <None Include="shader\WaterTexture.frag.glsl" />
+    <None Include="shader\WaterTexture.vert.glsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.c" />
+    <ClCompile Include="src\renderBackground.c" />
+    <ClCompile Include="src\renderWaterTexture.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\globals.h" />
+    <ClInclude Include="src\renderBackground.h" />
+    <ClInclude Include="src\renderWaterTexture.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

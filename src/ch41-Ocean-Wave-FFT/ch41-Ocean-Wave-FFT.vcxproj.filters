@@ -14,4 +14,26 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shader\ocean_update_normal.comp.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shader\ocean_update_ht.comp.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shader\ocean.vert.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shader\ocean_fft.comp.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shader\ocean.frag.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
 </Project>

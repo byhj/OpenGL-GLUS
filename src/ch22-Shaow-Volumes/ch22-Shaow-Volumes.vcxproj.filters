@@ -14,4 +14,32 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shader\shadowvolume.vert.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shader\shadowvolume.geom.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shader\shadow.vert.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shader\shadow.frag.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shader\shadowvolume.frag.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shader\color.vert.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shader\color.frag.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
 </Project>

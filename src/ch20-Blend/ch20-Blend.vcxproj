@@ -66,6 +66,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\main.c" />
+    <ClCompile Include="src\wavefront.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\wavefront.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shader\checker.frag.glsl" />
+    <None Include="shader\checker.vert.glsl" />
+    <None Include="shader\phong.frag.glsl" />
+    <None Include="shader\phong.vert.glsl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

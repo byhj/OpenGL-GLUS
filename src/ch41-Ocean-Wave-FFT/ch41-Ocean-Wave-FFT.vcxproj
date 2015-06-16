@@ -66,6 +66,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\main.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shader\ocean.frag.glsl" />
+    <None Include="shader\ocean.vert.glsl" />
+    <None Include="shader\ocean_fft.comp.glsl" />
+    <None Include="shader\ocean_update_ht.comp.glsl" />
+    <None Include="shader\ocean_update_normal.comp.glsl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

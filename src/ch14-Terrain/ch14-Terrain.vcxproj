@@ -66,6 +66,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\main.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shader\PassOne.frag.glsl" />
+    <None Include="shader\PassOne.geom.glsl" />
+    <None Include="shader\PassOne.vert.glsl" />
+    <None Include="shader\PassTwo.cont.glsl" />
+    <None Include="shader\PassTwo.eval.glsl" />
+    <None Include="shader\PassTwo.frag.glsl" />
+    <None Include="shader\PassTwo.geom.glsl" />
+    <None Include="shader\PassTwo.vert.glsl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

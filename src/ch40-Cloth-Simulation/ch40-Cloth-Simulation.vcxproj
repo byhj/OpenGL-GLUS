@@ -66,6 +66,18 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="src\main.c" />
+    <ClCompile Include="src\render_sphere.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\render_sphere.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shader\cloth.comp.glsl" />
+    <None Include="shader\cloth.frag.glsl" />
+    <None Include="shader\cloth.vert.glsl" />
+    <None Include="shader\sphere.frag.glsl" />
+    <None Include="shader\sphere.vert.glsl" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

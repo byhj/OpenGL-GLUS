@@ -135,8 +135,8 @@ GLUSboolean init(GLUSvoid)
 
     //
 
-    glusFileLoadText("../Example34/shader/renderdepthmap.vert.glsl", &vertexSource);
-    glusFileLoadText("../Example34/shader/renderdepthmap.frag.glsl", &fragmentSource);
+    glusFileLoadText("shader/renderdepthmap.vert.glsl", &vertexSource);
+    glusFileLoadText("shader/renderdepthmap.frag.glsl", &fragmentSource);
 
     glusProgramBuildFromSource(&g_programDepthPass, (const GLUSchar**) &vertexSource.text, 0, 0, 0, (const GLUSchar**) &fragmentSource.text);
 
@@ -221,7 +221,7 @@ GLUSboolean init(GLUSvoid)
     //
 
     // Use a helper function to load an wavefront object file.
-    glusShapeLoadWavefront("dragon.obj", &wavefrontObj);
+    glusShapeLoadWavefront("../../media/dragon.obj", &wavefrontObj);
 
     g_numberVertices = wavefrontObj.numberVertices;
 

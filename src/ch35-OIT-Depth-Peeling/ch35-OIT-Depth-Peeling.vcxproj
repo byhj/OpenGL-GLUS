@@ -10,6 +10,15 @@
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shader\fullscreen_blend.frag.glsl" />
+    <None Include="shader\fullscreen_blend.vert.glsl" />
+    <None Include="shader\phong_depth_peel.frag.glsl" />
+    <None Include="shader\phong_depth_peel.vert.glsl" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{C586AFE1-A857-4F01-9F0D-CA48961C849B}</ProjectGuid>
     <RootNamespace>ch35OITDepthPeeling</RootNamespace>
@@ -65,8 +74,6 @@
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

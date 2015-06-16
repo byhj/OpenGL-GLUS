@@ -76,8 +76,8 @@ GLUSboolean init(GLUSvoid)
 
     GLUSshape plane;
 
-    glusFileLoadText("../Example03/shader/texture.vert.glsl", &vertexSource);
-    glusFileLoadText("../Example03/shader/grey.frag.glsl", &fragmentSource);
+    glusFileLoadText("shader/texture.vert.glsl", &vertexSource);
+    glusFileLoadText("shader/grey.frag.glsl", &fragmentSource);
 
     glusProgramBuildFromSource(&g_program, (const GLchar**) &vertexSource.text, 0, 0, 0, (const GLchar**) &fragmentSource.text);
 
@@ -96,7 +96,7 @@ GLUSboolean init(GLUSvoid)
     //
 
     // Load the image.
-    glusImageLoadTga("desert.tga", &image);
+    glusImageLoadTga("../../media/desert.tga", &image);
 
     // Generate and bind a texture.
     glGenTextures(1, &g_texture);

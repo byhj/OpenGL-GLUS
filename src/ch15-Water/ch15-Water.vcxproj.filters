@@ -14,4 +14,46 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="shader\WaterTexture.frag.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shader\WaterTexture.vert.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shader\Water.vert.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shader\Water.frag.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shader\Background.frag.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shader\Background.vert.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\renderBackground.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\renderWaterTexture.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\renderBackground.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\renderWaterTexture.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\globals.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
 </Project>

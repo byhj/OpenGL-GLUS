@@ -14,4 +14,34 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\main.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\render_sphere.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\render_sphere.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shader\sphere.vert.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shader\sphere.frag.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shader\cloth.vert.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shader\cloth.frag.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="shader\cloth.comp.glsl">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
 </Project>
