@@ -134,7 +134,7 @@ GLUSboolean init(GLUSvoid)
     //
 
     // Load the image.
-    glusImageLoadTga("four_shapes_color.tga", &image);
+    glusImageLoadTga("../../media/four_shapes_color.tga", &image);
 
     glActiveTexture(GL_TEXTURE0);
 

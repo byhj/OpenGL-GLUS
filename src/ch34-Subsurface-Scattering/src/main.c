@@ -145,8 +145,8 @@ GLUSboolean init(GLUSvoid)
 
     //
 
-    glusFileLoadText("../Example34/shader/subsurfacescattering.vert.glsl", &vertexSource);
-    glusFileLoadText("../Example34/shader/subsurfacescattering.frag.glsl", &fragmentSource);
+    glusFileLoadText("shader/subsurfacescattering.vert.glsl", &vertexSource);
+    glusFileLoadText("shader/subsurfacescattering.frag.glsl", &fragmentSource);
 
     glusProgramBuildFromSource(&g_program, (const GLUSchar**) &vertexSource.text, 0, 0, 0, (const GLUSchar**) &fragmentSource.text);
 

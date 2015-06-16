@@ -143,7 +143,7 @@ GLUSboolean init(GLUSvoid)
 	GLUStextfile vertexSource;
 	GLUStextfile fragmentSource;
 
-	GLchar buffer[27] = "../../media/doge2/doge2_POS_X_00_s.hdr";
+	GLchar buffer[50] = "../../media/doge2/doge2_POS_X_00_s.hdr";
 
 	GLint i, k, m;
 
@@ -366,7 +366,7 @@ GLUSboolean init(GLUSvoid)
     //
 
 	printf("Loading 'doge2/EnvironmentBRDF_1024.data' ...");
-    if (!glusFileLoadBinary("doge2/EnvironmentBRDF_1024.data", &rawimage))
+    if (!glusFileLoadBinary("../../media/doge2/EnvironmentBRDF_1024.data", &rawimage))
     {
 		printf(" error!\n");
     }
